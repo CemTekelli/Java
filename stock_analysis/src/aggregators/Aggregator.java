@@ -17,7 +17,6 @@ public abstract class Aggregator {
 	
 	/**
 	 * add data to the given collection
-	 * 
 	 */
 	public void add(double number) {
 		numbers.add(number);

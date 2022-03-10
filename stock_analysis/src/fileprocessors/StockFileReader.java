@@ -46,6 +46,4 @@ public class StockFileReader {
 		}
 	    return lines;
 	}
-	
-
 }

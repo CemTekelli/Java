@@ -5,10 +5,6 @@ import java.util.List;
 
 public class MaxAggregator extends Aggregator{
 	
-	public MaxAggregator(List<Double> numbers) {
-		this.numbers = new ArrayList<Double>();
-	}
-
 	@Override
 	public double calculate() {
 		double max = numbers.get(0);
