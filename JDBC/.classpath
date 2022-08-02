@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/build/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/demo/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/generated/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/legacy/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/main/core-api/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/main/user-api/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.28/src/test/java"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.28/mysql-connector-java-8.0.28.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="out/production/JDBC"/>
+</classpath>

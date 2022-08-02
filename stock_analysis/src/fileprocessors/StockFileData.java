@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class StockFileData {
 	
 	List<HashMap<String, Double>> data = new LinkedList<>();
@@ -16,3 +17,6 @@ public class StockFileData {
 		data = dataIn;
 	}
 }
+
+
+

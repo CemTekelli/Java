@@ -1,0 +1,71 @@
+1) Imports:
+
+	-> Classes from the default package cannot be imported into other classes
+	-> A class with the same name in 2 packages cannot be imported if the 2 packages are being imported
+	-> A class that only contains static members can be statically imported
+	-> Order of elements: PIC -> (Package, Imports, Class)
+
+2) Variable Names:
+
+	-> Allowed:
+		okFloat float;
+		double $ok2Double1;
+		double _a1toDouble;
+		double myTest_;
+		float __okButNotNice$123_;
+		int _;
+		int $;
+	
+3) Primitives:
+
+	-> Every "loose" integer is an "int", if the number does not fit in the int range it must end in "L",
+	   ex: long max = 32_123_456_789L;
+	
+	-> If the int fits in long, it doesn't need the "L" at the end, e.g. long n = 2_300;
+	
+	-> Beginnings of Binary, Octal and Hexa:
+		Binary = 0b (0 and 1)
+		Octal = 0 (0 to 7)
+		Hexa = 0x (0 to 9 and A to F)
+		
+	-> Value separation with "_":
+		
+		Not allowed Allowed:
+		
+			1)Before the decimal point : 12_.25
+			2)After decimal point : 12._25
+			3)Before the number : _12.25
+			4)After the number : 12.25_
+		
+	-> Decimal number without "f" at the end, is automatically "double", e.g: 
+		float myNumber = 25.4f; //25.4 is by default double
+		
+	-> Every float number must be followed by "f" at the end, no matter its magnitude, e.g:
+		float myNumber = 25.4f; //if there is no "f" there is a compile error
+		
+	-> A float is automatically converted to a double, e.g:
+		double myDouble2 = 2.54F;
+		
+	-> "long" cannot be automatically converted to "int", e.g. int amount = 9L;
+	
+	-> Scientific notation:
+		The "E" followed by number, indicates how many places the decimal point should "skip", ex:
+		double scientific = 5.000125E03; (5.125)
+		double scientific2 = 5.000125E3; (5.125)
+		
+	-> The char value must not contain more than 1 character, with the exception of unicode notations, e.g:
+		char uniChar= '\u03A9';
+		When printing, it will appear with the format literal
+
+4) Boxing:
+
+	-> Boxing: from "int" to "Integer" explicitly
+		Integer myInteger = new Integer(10);
+		Integer myInteger2 = new Integer(null); //with null is also boxing
+		
+	->Auto boxing: from "int" to "Integer" implicitly 
+		Integer myInteger2 = 20;
+		In method calls, tb is auto boxing, e.g. sum(10,10); //method signature is sum(Integer i1, Integer i2);
+		
+	-> Unboxing: from "Integer" to "int" implicitly
+	   int myInt2 = myInteger;
